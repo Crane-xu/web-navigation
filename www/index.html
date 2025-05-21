@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>导航</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <section class="nav">
+      <div class="logo">
+        <img src="./img/bc-logo.png" alt="宝畅图标" />
+        <h1>宝畅智运</h1>
+      </div>
+      <h3 class="span">
+        <span class="m">办</span>
+        <span class="m">公</span>
+        <span class="m">网</span>
+        <span class="m">址</span>
+        <span class="m">导</span>
+        <span class="m">航</span>
+      </h3>
+      <div id="nav-wrap" class="nav-container"></div>
+      <div class="insert-btn">
+        <button class="h-button btn-outline-primary" id="insert-btn">新增站点 👏</button>
+      </div>
+      <form id="site-form" class="form hide">
+        <label for="file">图标</label>
+        <input type="file" name="file" id="file-input">
+        <!-- <label for="name">标题</label> -->
+        <input type="text" name="name" placeholder="标题">
+        <!-- <label for="url">链接</label> -->
+        <input type="text" name="url" placeholder="链接">
+        <!-- <label for="img">图标</label> -->
+        <input type="text" name="img" hidden>
+        <input class="bth-submit" type="submit">
+      </form>
+    </section>
+  </main>
+  <script src="js/sites-link.js"></script>
+</body>
+
+</html>
