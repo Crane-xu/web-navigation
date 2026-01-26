@@ -37,11 +37,14 @@ function linkRemove() {
     const element = removeLinks[index];
     element.addEventListener("click", function (event) {
       event.preventDefault();
-      const currentLink = element.parentNode.getAttribute("href");
+      const pNode = element.parentNode;
+      const currentLink = pNode.getAttribute("href");
+      const imgNode = pNode.querySelector("img");
+      const currentImg = imgNode.getAttribute("src");
       const besure = window.confirm("确定移除此链接吗？");
       if (!besure) return;
 
-      action({ operate: 'remove', site: { url: currentLink } });
+      action({ operate: 'remove', site: { url: currentLink, img: currentImg } });
       event.stopPropagation();
     }, false);
   }
