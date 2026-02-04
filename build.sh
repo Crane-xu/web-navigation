@@ -1,1 +1,0 @@
-gcc -O2 -Wall -Wextra *.c -o server -lpthread
